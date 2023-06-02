@@ -1,0 +1,76 @@
+/* p1.html */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    /* color: #fff; */
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #000;
+}
+.annimation1{
+    background: #000;
+    /* animation: bepractical;
+    animation: 10s;
+    animation: infinite; */
+    animation: bepractical 10s infinite;
+}
+@keyframes bepractical {
+    from{background:#fc4a1a;}
+    to{background: #0575e6;}
+}
+/* p2.html */
+.annimation2{
+    background:url(../image/download.jpg) ;
+    animation: bepractical 10s infinite;
+    background-size: 100%;
+}
+@keyframes bepractical{
+    from{background: url(../image/img1.jpg) no-repeat top; color: red;}
+    to{background: url(../image/img1.jpg)no-repeat;color: green; }
+}
+/* p3.html */
+.annimation3{
+    background: #fc4668;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    color:#fff;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3 {
+    0%{
+        top: 0px;
+        left:0px;
+        background: #fc4668;
+        color:#000;
+    }
+    25%{
+        top: 0px;
+        left:600px;
+        background: cadetblue;
+        color:red;
+    }
+    50%{
+        left:600px;
+        top: 400px;
+        background: chartreuse;
+        color:#0575e6;
+    }
+    75%{
+        top:400px;
+        left:0px;
+        background: teal;
+        color: grey;
+    }
+    100%{
+        top:0px;
+        left:0px;
+        background: #fc4668;
+        color:#000;
+    }
+}

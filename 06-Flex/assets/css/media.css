@@ -1,0 +1,18 @@
+/* mobile version */
+@media(max-width:768px){
+    .container>.item{
+        width: 100%;
+    }
+    .container4{
+        flex-wrap: nowrap;
+    }
+}
+/* tablet version */
+@media(min-width:769px) and (max-width:1200px){
+    .container>.item{
+        width: 40%;
+    }
+    .container4{
+        flex-wrap: nowrap;
+    }
+}

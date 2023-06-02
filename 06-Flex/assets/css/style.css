@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* p2.html */
+.container{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;  
+     flex-direction: column;
+    flex-direction: column-reverse; 
+ 
+     /* flex-wrap: wrap;  */
+    flex-flow: row wrap;
+
+    /* column-gap: 20px;
+    row-gap: 20px;  */
+
+    gap:20px;
+}
+  .container>.item{
+    background-color: gray;
+    /* margin: 20px;  */
+    padding: 20px;
+    width: 28.33%;
+}  
+/* p3.html */
+.container1{
+    background-color: lightgrey;
+    padding: 20px;
+    display: flex;
+    flex-flow:  row wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; 
+}
+ .container1>.item{
+    background-color: grey;
+    width: 31.33%;
+} 
+
+/* p4.html */
+.container2{
+    height: 400px;
+    align-items: flex-start;
+     align-items: flex-end;
+    align-items: center; 
+
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; 
+}
+ .container2>.item{
+    height: 50px; 
+}
+/* p5.html */
+.container3>.item{
+    width: 200px;
+    height: 100px;
+    flex-grow: 1;
+    flex: 1;
+}
+.container3>.item:first-child{
+    flex:2;
+}
+.container3>.item:last-child{
+    flex:3;
+}
+/* p6.html */
+.container4{
+    flex-wrap: nowrap;
+}
+.container4>.item{
+    flex-shrink: 1;
+}
+.container4>.item:first-child{
+    flex-shrink: 5;
+}
+.container4>.item:last-child{
+    flex-shrink: 9;
+}
+/* p7.html */
+.container5>.item:first-child{
+    order: 2;
+}
+.container5>.item:nth-child(2){
+    order: 3;
+}
+.container5>.item:last-child{
+    order: 1;
+}
+/* p8.html */
+.container6{
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.container6>.item{
+    height: 100px;
+    width: 300px;
+}
+.container6>.item:first-child{
+    font-size: 20px;
+    align-self: flex-start;
+}
+.container6>.item:nth-child(2){
+    font-size: 30px;
+}
+.container6>.item:last-child{
+    font-size: 40px;
+    align-self: flex-end;
+}
